@@ -28,12 +28,14 @@ st.markdown("""
         border-radius: 6px 6px 0 0;
         font-weight: 600;
         font-size: 13px;
+        color: #212529;               /* ensures tab text is always dark */
     }
     div[data-testid="metric-container"] {
         background: #f0f4f8;
         border-left: 4px solid #1e3a5f;
         border-radius: 6px;
         padding: 12px;
+        color: #212529;
     }
     .section-header {
         background: linear-gradient(90deg, #1e3a5f, #2d6096);
@@ -44,9 +46,31 @@ st.markdown("""
         font-weight: 700;
         font-size: 15px;
     }
-    .risk-low    { background:#d4edda; border-left:4px solid #28a745; padding:8px 14px; border-radius:4px; margin:4px 0; }
-    .risk-medium { background:#fff3cd; border-left:4px solid #ffc107; padding:8px 14px; border-radius:4px; margin:4px 0; }
-    .risk-high   { background:#f8d7da; border-left:4px solid #dc3545; padding:8px 14px; border-radius:4px; margin:4px 0; }
+    /* Risk boxes – fixed contrast (only change made) */
+    .risk-low { 
+        background:#d4edda; 
+        border-left:4px solid #28a745; 
+        padding:8px 14px; 
+        border-radius:4px; 
+        margin:4px 0; 
+        color: #212529 !important; 
+    }
+    .risk-medium { 
+        background:#fff3cd; 
+        border-left:4px solid #ffc107; 
+        padding:8px 14px; 
+        border-radius:4px; 
+        margin:4px 0; 
+        color: #212529 !important; 
+    }
+    .risk-high { 
+        background:#f8d7da; 
+        border-left:4px solid #dc3545; 
+        padding:8px 14px; 
+        border-radius:4px; 
+        margin:4px 0; 
+        color: #212529 !important; 
+    }
     .lock-counter {
         background: #1e3a5f;
         color: white;
@@ -57,8 +81,8 @@ st.markdown("""
         font-weight: 700;
     }
     .step-complete { color: #28a745; font-weight: 700; }
-    .step-active   { color: #007bff; font-weight: 700; }
-    .step-pending  { color: #adb5bd; }
+    .step-active { color: #007bff; font-weight: 700; }
+    .step-pending { color: #adb5bd; }
 </style>
 """, unsafe_allow_html=True)
 
