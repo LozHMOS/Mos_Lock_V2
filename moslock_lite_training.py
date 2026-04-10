@@ -522,7 +522,7 @@ with tab1:
                 )
                 st.session_state.training_complete = True
                 st.session_state.permit_status = "Draft"
-                st.balloons()
+                # st.balloons()
             else:
                 st.error("Enter the name of the approving Electrical Engineer before submitting.")
 
@@ -967,7 +967,7 @@ with tab2:
         if st.button("✅ Finalise & Submit Permit", key="finish_permit", type="primary"):
             st.success("✅ HV isolation permit finalised and submitted to records.")
             st.session_state.permit_status = "Completed"
-            st.balloons()
+            # st.balloons()
 
 # ═══════════════════════════════════════════════════════════════════════════════
 # TAB 3 – TVL OBSERVATION (FRM1277)
